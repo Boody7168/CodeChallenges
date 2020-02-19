@@ -1,13 +1,14 @@
-function findLargestNumber(arr) {
-    let largestNumber = arr[0]
+let nums = [1,2,3,4,5]
+function large(arr) {
+let result = ''
 for(i=0; i<arr.length; i++) {
-if(arr[i]>largestNumber && typeof arr[i]==='number') {
-largestNumber=arr[i]
+if(arr[i]>result) {
+result=arr[i]
 }
-}        
-return largestNumber
 }
-console.log(findLargestNumber([1,2,3]))
+return result
+}
+console.log(large(nums))
 
 function arrayOperations(arr) {
 // return first item
@@ -33,6 +34,7 @@ return function(num) {
 return base+num
 }
 }
+plusBase(5)(7)
 
 function flatten(arr1, arr2) {
  let flattenedArr = arr1.concat(arr2)
